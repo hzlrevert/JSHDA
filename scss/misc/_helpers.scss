@@ -1,0 +1,111 @@
+
+/*helper*/
+.conteiner{
+    margin: 10px;
+    /*max-width: 1400px;*/
+   
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.fondo1{
+    background-color: var(--primario);
+}
+.fondo2{
+    background-color: var(--secundario);
+}
+.fondo3{
+    
+    background-image: url(../img/fondo1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo4{
+    background-image: url(../img/fondo2.jpg);
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color-amarillo{
+    color: var(--terciario);
+}
+
+#cuadrante{
+    flex: 1 1 250px ;    
+
+
+
+    &--izq{
+        flex: 1 1 250px;  
+        
+        
+    }
+    
+    
+    /*DERECHO*/
+    &--der{
+        flex: 1 1 250px;  
+        
+     
+    }
+}
+
+
+
+/*IZQUIERDO*/
+.cuadrante--a{
+    /*margin-bottom: var(--spacing-sm);*/
+    color: var(--terciario);
+   /* padding: 10px;*/
+    transition: all .3s;
+    font-size: var(--tam-link);
+    border: 2px solid var(--terciario);
+    font-size: var(--tam-a);
+   
+    &:hover{
+        background-color: var(--terciario);
+        color: var(--primario);
+    }
+}
+
+.SEC{
+    display: inline-block;
+    padding: 20px;
+    background-color: crimson;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+#secciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: var(--spacing-sm);
+    
+
+
+    }
+
+
+    $ubicacion:(
+        der: end,
+        cen:center,
+
+    );
+
+    @each $texto, $ubic in $ubicacion {
+        .pos--#{$texto}{
+            display: flex;
+            justify-content: $ubic;
+            text-align: $ubic;
+        }
+        
+    }
+

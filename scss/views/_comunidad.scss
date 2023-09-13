@@ -1,0 +1,49 @@
+#iconoCarrito {
+    font-size: 2rem;
+    color: var(--terciario);
+}
+#badgeCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    font-size: 0.7rem;
+    background-color: #000 !important;
+}
+
+.offcanvas {
+    margin-top: 95px;
+    border-radius: 10px 0 0 0;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.producto h3 {
+    font-size: 2.5rem;
+    color: #07080D;
+}
+
+.precio {
+    font-size: 2rem;
+    color:  #FFC632;
+    text-decoration:wavy;
+}
+.iconos {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background-color: #07080D;
+}
+
+a {
+    text-decoration: none;
+    color: #FFC632;
+}
+p{
+   font-size: 1.5rem; 
+   color: #07080D;
+}
